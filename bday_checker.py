@@ -1,20 +1,29 @@
 #Birthday reminder application
 
+
+
+
 def writing():
 	fh = open('bday.txt','a')
 	data = input("Format: Date(dd/mm/yyyy)<space>Name\n")
-	fh.write(data + "\n")
+	fh.write(data)
+	fh.write('\n')
 	fh.close()
 
 def check():
 	fh = open('bday.txt','r')
 	date = input('Date: (Format: dd/mm/yyyy)\n')
+	count = 0
 	for line in fh:
 		dates = line.rstrip().split()
-		if dates[0] == date:
+		dd = dates[0]
+		if(date == dd):
 			print(dates[1])
-		else:
-			print('Not found!')
+			count = count +1
+		dates.clear()
+	if(count == 0):
+		print('Not Found!')
+
 
 
 def switchcase(oper):
