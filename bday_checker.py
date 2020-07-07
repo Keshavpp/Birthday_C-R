@@ -40,6 +40,6 @@ def switchcase(oper):
 #fh = open('bday.txt')	
 
 while(True):
-	print('What op to perform:\n 1. Add a date\n 2. Check a date \n 3. Exit\n')
+	print('Function List:\n 1. Add a date\n 2. Check a date \n 3. Exit\n')
 	oper = input()
 	switchcase(oper)
