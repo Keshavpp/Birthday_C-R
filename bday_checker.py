@@ -12,7 +12,7 @@ def writing():
 
 def check():
 	fh = open('bday.txt','r')
-	date = input('Date: (Format: dd/mm/yyyy)\n')
+	date = input('Date:(Format: dd/mm/yyyy)\n')
 	count = 0
 	for line in fh:
 		dates = line.rstrip().split()
